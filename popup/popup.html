@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ContextKeeper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📋 ContextKeeper</h1>
+      <p class="subtitle">Saved Contexts</p>
+    </header>
+    
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search snippets...">
+    </div>
+
+    <div id="snippetsList" class="snippets-list">
+      <div class="empty-state">
+        <p>No saved contexts yet</p>
+        <small>Select text on ChatGPT and click "Save Context"</small>
+      </div>
+    </div>
+
+    <footer>
+      <button id="clearAll" class="btn-secondary">Clear All</button>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
